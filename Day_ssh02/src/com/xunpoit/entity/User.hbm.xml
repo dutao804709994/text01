@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="t_user" name="com.xunpoit.entity.User">
+    <id name="id">
+      <generator class="native"/>
+    </id>
+    <property name="userName" length="20" column="userName"/>
+    <property name="passWord" length="20" column="passWord"/>
+  </class>
+</hibernate-mapping>
